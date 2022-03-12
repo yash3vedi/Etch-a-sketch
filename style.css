@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: antiquewhite;
+    font-family: 'Roboto', sans-serif;
+    margin-top: -40px;
+}
+#title{
+    text-align: center;
+    font-size: 64px;
+}
+.btns{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.sliderAndValue{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+}
+
+#slider{
+    -webkit-appearance: none;
+    background: black;
+    outline: none;
+    border-radius: 50px;
+}
+#slider::-webkit-slider-thumb {
+    -webkit-appearance: none; 
+    width: 25px; 
+    height: 25px; 
+    background: white; 
+    border-radius: 50px;
+}
+
+#slider::-moz-range-thumb{
+    width: 25px; 
+    height: 25px; 
+    background: white; 
+    border-radius: 50px;
+}
+.value{
+    font-size: 30px;
+    padding-left: 10px;
+    color: black;
+    text-shadow: 2px 2px white;
+
+}
+
+
+button:hover{
+    cursor: pointer;
+    background-color: burlywood;
+    transform: scale(1.1);
+}
+
+#slider, #reset, #black, #rgb, #color{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    font-size: 18px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+}
+#color{
+    margin: 5px;
+    padding: 0;
+}
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: burlywood;
+    text-align: center;
+    border: 2px solid black;
+}
+/* Grid */
+/* .grid{
+    display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+    position: relative;
+    background-color: white;
+    top: 30px;
+    outline: 2px solid black;
+    font-size: 0;
+    margin: auto;
+    margin-top: 40px;
+    height: 480px;
+    width: 480px;
+    padding: 0;
+    border: none;
+}  */
+.container{
+    display: flex;
+    justify-content: center;
+
+}
+.grid{
+    margin-top: 50px;
+    display: inline-grid;
+    grid-template-columns: repeat(16, 2fr);
+    grid-template-rows: repeat(16, 2fr);
+    border: 5px solid white;
+    border-radius: 5px;
+    height: 480px;
+    width: 480px;
+    background-color: gray;
+    box-shadow: 10px 10px;
+}
+
+.cell{
+    background-color: white;
+    border: 1px solid black;
+}
+.box {
+    border: 0.5px solid rgba(0, 0, 0, 0.05);
+    border-radius: 0.5rem;
+  }
+  img {
+    transition: transform .4s;
+  }
+  img:hover {
+    transform: rotate(360deg);
+  }
+  a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    text-decoration: underline;
+}

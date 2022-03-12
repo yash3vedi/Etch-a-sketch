@@ -1,20 +1,51 @@
 <html>
-    <head>
-        <title>Etch-a-sketch</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <script src="script.js"></script>
-    </head>
-    <body>
-        <h1>Etch-a-sketch</h1>
-        <input type="color" id="color" value="#000000">
-        <button id="colorMode">Color Mode</button>
-        <button id="random">Random Mode</button>
-        <button id="eraser">Eraser</button>
-        <button id="clear">Clear</button>
-        <input type="range" id="size" min="1" max="64" value="16">
-        
-
-    </body>
+  <head>
+    <title>Etch-a-sketch</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <h1 id="title">Etch-a-sketch</h1>
+    <div class="btns">
+      <div class="colorAndPrompt">
+        <input type="color" id="color" />
+        <p>Choose a color</p>
+      </div>
+      <div class="sliderAndValue">
+        <input type="range" id="slider" min="1" max="32" value="16" />
+        <p class="value">16</p>
+      </div>
+      <button id="reset">Reset</button>
+      <button id="black">Black</button>
+      <button id="rgb">RGB</button>
+    </div>
+    <div class="container">
+    <div class="grid"></div>
+  </div>
+    <footer>
+      <p>
+        This project is a part of
+        <a
+          href="https://www.theodinproject.com/paths/foundations/courses/foundations/lessons/etch-a-sketch-project"
+          target="_blank"
+          >Etch-a-sketch.</a
+        >
+      </p>
+      <p>
+        ©
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        <img
+          src="\GitHub-Mark\PNG\GitHub-Mark-120px-plus.png"
+          height="30"
+          width="30"
+        /><a href="https://github.com/yash3vedi" target="_blank">
+          Yash Trivedi</a
+        >
+      </p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
